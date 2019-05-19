@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Nibas jobs.</title>
+	<meta name="viewport" content="width=device-width, initial-scale:1.0">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="container"> <!-- wrapping the content in container div-->
+			<div class="flex"> <!-- flex container to flex the contents using css-->
+				<h1>Nibas <span>Webber</span></h1>
+				<form>
+					<input type="search" placeholder="search..."> <!-- Search bar -->
+				</form>
+			</div>
+		</div>	
+	</header>
+
+	<!-- this is the main section of this web page-->
+	<section class="main">
+		<nav><!-- navigation bar-->
+			<ul>
+				<li><a href="index.html">Landing</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="glossary.html">Glossary</a></li>
+				<li class="clicked"><a href="jobs.html">Jobs</a></li> <!-- this portion is to show the clicked content-->
+				<li><a href="tutorials.html">Tutorials</a></li>
+			</ul>
+		</nav>
+
+		<!-- This is the sub-div of main section. this div is the parent container of its sub-div. -->
+		<div class="content">
+			<h1>Nibas-Jobs</h1>
+			<p><span>Find and post jobs.</span><p>
+			<div class="post-jobs"> <!--subdiv of content-->
+				<h1>Post A Job</h1>
+				<form><!--form for jobs-->
+					<label>Company Name</label>
+					<input type="text" placeholder="company name..">
+					<label>Job Title</label>
+					<input type="text" placeholder="Job Title">					
+					<label>Qualifications</label>
+					<input type="text" placeholder="Qualifications">
+					<label>Citizenship</label>
+					<select name="nationality"><!--select option for nationality-->
+						<option value="nationality1">Nepal</option>
+						<option value="nationality1">United Kingdom</option>
+						<option value="nationality1">United States of America</option>
+						<option value="nationality1">Brazil</option>
+					</select>
+					<label>Job Description</label>
+					<textarea name="message" placeholder="description"></textarea>
+					<label>Terms and Conditions</label><br>
+					<input type="radio" id="terms"><label for="terms">I agree to all the terms and conditions.</label>
+					<br>
+					<input type="radio" id="policy"><label for="policy">I agree to all the privacy policy mentioned in the agreement.</label><br>
+					<input type="submit" value="submit">
+				</form>
+			</div>
+
+			<h1>Find a Job</h1>
+			<div class="article"><!--child-div of content.-->
+				<div class="image">
+					<img src="../img/office.png" alt="office-job">
+				</div>
+				<div class="news-head">
+					<h2>Web Designer</h2>
+					Get the Best web designing job here.
+				</div>
+			</div>	
+			<div class="article">
+				<div class="image">
+					<img src="../img/php.png" alt="office-job">
+				</div>
+				<div class="news-head">
+					<h2>Server Side Programmer</h2>
+					We are a  software company that specialize in server side programming. This company will be the best to utilize your server side programming knowledge.
+				</div>	
+			</div>
+		</div>
+	</section>
+	
+	<!--Footer section of the page-->
+	<footer>
+		<div class="social-media">
+			<a href="#" class="soc-1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="soc-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#" class="soc-3"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#" class="soc-4"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#" class="soc-5"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		</div>
+		<h3>@Copyright content</h3>
+		<h3>All Rights Reserved.</h3>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale:1.0">
+	<title>Nibas Webber</title>
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><!-- icons from font-awesome-->
+</head>
+<body>
+	<header>
+		<div class="container"> <!-- wrapping the content in container div-->
+			<div class="flex"> <!-- flex container to flex the contents using css-->
+				<h1>Nibas <span>Webber</span></h1>
+				<form>
+					<input type="search" placeholder="search..."> <!-- Search bar -->
+				</form>
+			</div>
+		</div>	
+	</header>
+
+	<!--This portion is for the extra content below the header which contains a background image and short text--> 
+	<section class="extra">
+		<div class="container"> <!-- this container class uses the same css property as above container class div-->
+			<h1><span>Professional</span> Web Developer news site</h1>
+			<p><span>Home for latest news and updates.</span></p>
+		</div>
+	</section>
+
+	<!-- This is the main section div of this website. -->
+	<section class="main">
+		<nav>
+			<ul>
+				<li class="clicked"><a href="index.html">Landing</a></li> <!-- this portion is to show the clicked content-->
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="glossary.html">Glossary</a></li>
+				<li><a href="jobs.html">Jobs</a></li>
+				<li><a href="tutorials.html">Tutorials</a></li>
+			</ul>
+		</nav>
+
+		<!-- This is the sub-div of main section. this div is the parent container for its subdiv -->
+		<div class="content">
+			<div class="subs"> <!-- This is the div for subscription box. -->
+				<h3>Suscribe for new contents.</h3>
+				<form>
+					<input type="email" placeholder="Enter your email.">
+					<input type="submit" value="Subscribe">
+				</form>	
+			</div>
+
+			<div class="article"> <!-- This div contains main articles --> 
+				<div class="image">
+					<img src="../img/welcome.png" alt="welcome">
+				</div>
+				<div class="news-head">
+					<h1>Stay updated with Nibas Webber.</h1>
+					<br>
+					<br>
+					With Nibas you will always be updated about latest web development articles, news and events. You can also learn web designing with our new Tutorials.
+				</div>
+			</div>
+
+			<div class="bio"> <!-- This div contains team image. -->
+				<h1>Our development Team.</h1>
+				<a href="../img/teamm.png" target="new"><img src="../img/teamm.png" alt="team image"></a>				
+			</div>
+		</div>
+	</section>
+
+	<!-- This is the footer portion of this website -->
+	<footer>
+		<div class="social-media">
+			<!-- All the icons are from the font-awesome websites which is linked in the head tag. -->
+			<a href="#" class="soc-1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="soc-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#" class="soc-3"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#" class="soc-4"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			<a href="#" class="soc-5"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		</div>
+		<h3>@Copyright content</h3>
+		<h3>All Rights Reserved.</h3>
+	</footer>
+</body>
+</html>

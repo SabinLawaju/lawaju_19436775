@@ -1,0 +1,395 @@
+/* this is the global property for the website */
+body{
+	background:#E9EBEE;
+	padding:0;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3{margin:0; padding:0;} /* clearing the default margin and padding for all h1 and h3 tags within the html. */
+
+.container{	/* All the content within the container will have this property. */
+	width: 97%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+.img{
+	width: 100%;
+	height: auto;
+}
+
+
+/* global input property for the website. */
+input[type=search]{
+	width: 100%;
+	border: 1px solid;
+	border-radius:8px;
+}
+
+input[type=email]{	
+	width: 80%;
+	border: 1px solid;
+	border-radius: 3px;
+	height: 30px;
+	font-size: 18px;
+	text-align: center;
+}
+
+input[type=submit]{
+	width:80%;
+	background:#FBB239; 
+	height:30px;
+	font-size: 18px;
+	margin: 3px;
+	color:white;
+	border-radius: 3px;
+	transition: transform 0.2s;
+}
+
+input[type=submit]:hover{ /* hover property of type submit input. */
+	background:#FF8C00;
+	transform:scale(0.99,0.99);
+}
+
+span{ /* all the span tag will have this property */
+	color:#FBB239;
+}
+
+
+/* this is the property for the header portion*/
+header{
+	background:#191C1D;
+	color: white;
+	border-bottom: black 1px solid;
+	/* this property sets the min height of the container. If the content of the container increases the height also increases*/
+	min-height:60px; 
+}
+
+header .flex{	/* applying flex property to this container */
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+header h1{	/* property for the child container of the .flex container */
+	margin:0;
+	padding:0;
+	text-shadow: 0px 0px 8px black;
+}
+
+.flex form{	/* property for the child container of the .flex container */
+	width: 30%;
+	padding-top: 5px;
+}
+
+/* extra section container */
+.extra{
+	background: url("../img/html.png") no-repeat;
+	background-size: cover;
+	min-height: 180px;
+	text-align: center;
+	padding-top: 20px;
+	color:white;
+	box-shadow: 3px 3px 8px black;
+	text-shadow:3px 3px 8px black;
+	font-weight: bold;
+}
+
+.extra h1{ /* h1 of the .extra container uses this property along with the global h1 property */
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+/* main section container. This container is the parent container for nav and .content container. 
+   this container is used to flex these two child containers in row direction. */
+.main{
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+/* property for the navigation bar. child-container of .main container */
+nav{ 
+	flex:1;
+	padding-top:10px;
+	background:#252929;
+	border-right:#2B547E 1px solid;
+}
+
+nav ul{
+	overflow:hidden;
+	list-style: none;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	margin:0 4px 0 0;
+}
+
+nav ul li{
+	overflow:hidden;
+	width: 100%;
+	margin: 2px auto;
+	text-align: justify;
+	transition: transform 0.5s;
+}
+
+nav ul li a{ /* property for the link tag inside the navigation bar within the .main container */
+	display: block;
+	padding: 8px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+nav ul li:hover{ /* hover property for all the li container within nav bar within .main container */
+	background: #191C1D;
+	transform: scale(1.1,1.1);
+	box-shadow: 3px 3px 3px black;
+}
+
+.clicked a{	/* clicked nav bar content will have this property */
+	color:#FBB239;
+	text-shadow: 0 0 5px black;
+}
+
+/* child-container of the .main container. this container also has two sub-container. it uses flex
+property to arrange the child- containers in column direction. */
+.content{	
+	flex:5;
+	display:flex;
+	flex-direction:column;
+	margin:0 6px;
+	padding: 8px 10px;
+	justify-content:space-between;
+}
+
+.content h1{ text-align: center; text-transform: uppercase; text-shadow: 1px 1px 1px black; }
+.content p{text-align: center;}
+
+.content div{	/* all div within the .content container will have this property */
+	margin-bottom: 20px;
+	background:#FFFFFF;
+}
+
+/* child container of .content container */
+.content .subs{	
+	background: #252929;
+	text-align: center;
+	padding: 10px;
+	color:white;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow:0 0 8px #191C1D;
+}
+
+/* child container of the .content container. */
+.content .bio{	
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	border: 0.5px solid;
+	margin-bottom: 20px;
+}
+
+.content .bio h1{	/* h1 property for .content .bio container */
+	text-align: center;
+	background:#191C1D;
+	color:white;
+	padding:5px;
+}
+
+
+.content .bio img{ /* sets the property for the image inside the .bio container */
+	width:100%;
+	height:auto;
+	display:block;
+	margin:auto;
+	transition: transform 1.5s;
+}
+
+.bio img:hover{ /*hover effect for image in .bio container*/
+	transform: scale(1.05, 1.05);
+}
+
+/* child-container of .content container */
+.content .article{
+	display:flex;
+	align-items: center;
+	overflow: hidden;
+	min-height: 170px;
+	box-shadow: 3px 3px 3px black;
+	transition: transform 0.5s;
+}
+
+.content .article:hover{
+	transform: scale(1.01,1.01);
+	box-shadow: 3px 3px 8px black;
+}
+
+.content .article p{
+	margin:0;
+	padding:2px;
+	text-align: justify;
+}
+
+.article .image{flex:1; margin:0 10px 0 0; overflow: hidden;}
+.article .image img{width: 100%; display: block; transition: transform 1.5s;}
+.article .image img:hover{transform: scale(1.2,1.2);}
+.article .news-head{flex:2; text-align: center; margin:0 10px 0 0;}
+
+
+/*exclusive css for jobs.html*/
+.content .post-jobs form{
+	width: 50%;
+	margin:0 auto;
+	flex-direction: column;
+	padding: 20px;
+	background:#252929;
+	color:white;
+}
+
+.post-jobs form input[type=text], textarea, select{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+/* exclusive css for glossary.html*/
+.gloss div{
+	width: 50%;
+	margin:0 auto;
+	background:#252929;
+	color:#fff;
+	padding: 50px;
+}
+
+.gloss div a{
+	text-decoration: none;
+	color:#FBB239;
+	margin:0;
+	padding:0;
+}
+
+.gloss div a:hover{
+	color:#FF8C00;
+}
+
+
+/* exclusive css for tutorials page. start... */
+.tutorials{
+	display:flex;
+	min-height: 250px;
+	box-shadow: 3px 3px 3px black;
+	transition: transform 0.5s;
+}
+
+.tutorials:hover{ /*hover effect for .tutorials container*/
+	transform: scale(1.01,1.01);
+	box-shadow: 3px 3px 8px black;
+}
+
+.tutorials .text{flex: 2; margin:0 5px 0 0; text-align: center;}
+.tutorials .video{flex: 1; margin:0 5px 0 0;}
+.tutorials .video iframe{width:100%; height:100%;}
+
+
+/* property for the footer container */
+footer{
+	background: #191C1D;
+	text-align: center;
+	color:#FBB239;
+	margin-top: 20px;
+}
+
+.social-media{
+	background:#252929;
+	align-items: center;
+	padding: 40px 100px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.social-media a{	/* propert for the a tag within the .social-media */
+	display: block;
+	margin: 0 10px 10px 0;
+	padding: 30px 35px;
+	border: black 1px solid;
+	border-radius: 50%;
+	font-size: 25px;
+	transition:transform 1s, box-shadow 1s;
+}
+
+.fa{
+	color:#fff;
+	display: block;
+}
+
+/* background property for different icons within social-media */
+.soc-1{background:#4267B2;}
+.soc-2{background:#1B95E0;}
+.soc-3{background:#F4511E;}
+.soc-4{background:#F4511E;}
+.soc-5{background:#FF0000;}
+
+.social-media a:hover{	/* hover property for a tag within social-media */
+	transform: rotateY(180deg);
+	box-shadow: 3px 3px 6px black;
+}
+
+/* Responsive Web design Properties for Tablet */
+@media only screen and (max-width: 820px){
+	/*main section container*/
+	.main {flex-direction: column;}
+
+	/* navigation bar */
+	nav ul{display: flex; flex-direction: row; margin-right: 0px; padding-left:1px; padding-right: 1px;}
+	nav ul li{text-align: center; width: 20%;}
+
+	/* .content container */
+	.content div{margin:0;}/*all child div of the content container*/
+	/*child container of .content container*/
+	.content .subs{margin-bottom: 15px;}
+	.content .bio{margin-top: 15px;}
+	.article{border-bottom: 2px solid black;}
+		/*exclusive for jobs.html*/
+	.content .post-jobs{margin-bottom: 15px;}
+	.content .post-jobs form{width: 80%;}
+		/*exclusive for glossary.html*/
+	.gloss div{margin:0 auto; width: 70%;}
+		/*exclusive for tutorials.html*/
+	.content .tutorials{border-bottom:2px solid black; margin-bottom: 5px;}
+	
+	/* social media footer*/
+	.social-media{margin:0; padding: 15px 5px;}
+}
+
+/*Responsibe design for mobile phones*/
+@media only screen and (max-width: 680px){
+	/* head section*/
+	header .flex{flex-direction: column; align-items: center; padding-bottom: 10px;}
+	header .flex form{width: 100%;}
+	.extra h1{font-size: 30px;}
+	.extra p{font-size: 15px;}
+	
+	/*navigatin bar*/
+	nav ul{flex-direction:column; margin: 4px 0; width: 100%;}
+	nav ul li{width: 60%; }
+
+	/*content container*/	
+	.article .image{display:none;} 
+		/*jobs.html*/
+	.content .post-jobs form{width: 90%;}
+		/*glossary.html*/
+	.gloss div{width:100%;}
+		/*tutorials.html*/
+	.content .tutorials{flex-direction: column; margin-bottom: 15px;}
+	.tutorials .video{height: 200px;}
+}
